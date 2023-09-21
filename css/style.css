@@ -100,7 +100,7 @@ body {
 .header__search {
     background-color: #F2F2F2;
     border-radius: 10px;
-    border: 1px solid var(--Gray-4, #BDBDBD);
+    border: 1px solid #BDBDBD;
     padding: 17px 10px;
     width: 345px;
 
@@ -141,14 +141,12 @@ body {
 }
 
 .return-btn {
-    display: flex;
+    display: inline-flex;
     font-size: 20px;
     color: #333;
     gap: 10px;
     align-items: center;
     margin-bottom: 44px;
-    width: 90px;
-    /* чтобы область клика не на весь экран была */
 }
 
 .return-btn::before {
@@ -177,8 +175,8 @@ body {
     gap: 25px;
     width: 315px;
     padding: 20px 20px 30px;
-    background-color: #F2F2F2;
-    border: 1px solid var(--Gray-6, #F2F2F2);
+    background-color: #F9F9F9;
+    border: 1px solid #F2F2F2;
     border-radius: 20px;
     box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 0.05), -8px -8px 15px 0px #FFF;
 }
@@ -224,6 +222,11 @@ body {
     align-items: center;
 }
 
+.weight-options {
+    padding: 4px 12px;
+    border: 1px solid transparent;
+}
+
 .active__weight-options,
 .weight-options:hover {
     background-color: #fff;
@@ -244,7 +247,7 @@ body {
     font-weight: 600;
     background-color: #3ECF5E;
     border: 1px solid #3ECF5E;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 12px 32px;
 }
 
@@ -256,24 +259,23 @@ body {
     color: #828282;
 }
 
-.bottom-nav-prev {
+.bottom-nav-arrow {
     content: '';
     display: block;
     width: 16px;
     height: 16px;
+}
+
+.bottom-nav-prev {
     background-image: url('../images/prev-arrow.png');
 }
 
 .bottom-nav-next {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 16px;
     background-image: url('../images/next-arrow.png');
 }
 
 .active-bottom-nav {
-    color: var(--Green-1, #219653);
+    color: #219653;
 }
 
 .bottom-nav:first-child {
@@ -301,6 +303,11 @@ body {
     width: 33.33%;
 }
 
+.footer__item:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .footer__info {
     display: flex;
     gap: 47px;
@@ -314,8 +321,7 @@ body {
 }
 
 .footer__phone {
-    display: flex;
-    justify-content: flex-end;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
 }
